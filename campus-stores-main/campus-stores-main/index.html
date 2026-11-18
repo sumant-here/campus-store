@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campus Stores · Media equipment desk</title>
+    <meta
+      name="description"
+      content="Work a shift at a fictional campus equipment desk in this interactive product engineering exercise."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="0"
+      height="0"
+      aria-hidden="true"
+      class="icon-library"
+    >
+      <symbol id="icon-package-open" viewBox="0 0 24 24">
+        <path d="M12 22v-9" />
+        <path
+          d="M15.17 2.21a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.655 1.655 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z"
+        />
+        <path
+          d="M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13"
+        />
+        <path
+          d="M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.636 1.636 0 0 0 1.63 0z"
+        />
+      </symbol>
+      <symbol id="icon-package" viewBox="0 0 24 24">
+        <path
+          d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"
+        />
+        <path d="M12 22V12" />
+        <polyline points="3.29 7 12 12 20.71 7" />
+        <path d="m7.5 4.27 9 5.15" />
+      </symbol>
+      <symbol id="icon-clipboard-list" viewBox="0 0 24 24">
+        <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+        <path
+          d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+        />
+        <path d="M12 11h4" />
+        <path d="M12 16h4" />
+        <path d="M8 11h.01" />
+        <path d="M8 16h.01" />
+      </symbol>
+      <symbol id="icon-book-open" viewBox="0 0 24 24">
+        <path d="M12 7v14" />
+        <path
+          d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"
+        />
+      </symbol>
+      <symbol id="icon-messages-square" viewBox="0 0 24 24">
+        <path
+          d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
+        />
+        <path
+          d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1"
+        />
+      </symbol>
+      <symbol id="icon-check-circle" viewBox="0 0 24 24">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+        <polyline points="22 4 12 14.01 9 11.01" />
+      </symbol>
+      <symbol id="icon-arrow-left-right" viewBox="0 0 24 24">
+        <path d="m16 3 4 4-4 4" />
+        <path d="M20 7H4" />
+        <path d="m8 21-4-4 4-4" />
+        <path d="M4 17h16" />
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
+      </symbol>
+      <symbol id="icon-alert-triangle" viewBox="0 0 24 24">
+        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+        <line x1="12" y1="9" x2="12" y2="13" />
+        <line x1="12" y1="17" x2="12.01" y2="17" />
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+        <circle cx="12" cy="7" r="4" />
+      </symbol>
+    </svg>
+    <main>
+      <div id="campus-stores">
+        <div class="examstrip">
+          <span>Product Engineer practical</span>
+          <details>
+            <summary>Candidate brief</summary>
+            <div class="briefcopy">
+              <h2>Would you keep this product?</h2>
+              <p>
+                Work a shift at the campus media desk. Get the Film Society’s
+                kit out for its screening, handle the return, and leave the next
+                shift enough information to finish the job. Use the time control
+                to move the story forward.
+              </p>
+              <p>
+                Show one moment the product handles well and one moment you
+                would change. Use a specific action or decision from your shift
+                as evidence for each.
+              </p>
+              <p>
+                Sketch or prototype your change. Walk us through the same job
+                using it, explain what you would keep, and name one observation
+                at a real counter that would tell you whether it helped.
+              </p>
+              <p>
+                Use any tools you like, including AI assistants, web search,
+                and design or coding tools.
+              </p>
+            </div>
+          </details>
+        </div>
+        <header class="mast">
+          <div class="brandblock">
+            <div class="brandmark" aria-hidden="true">
+              <svg aria-hidden="true" class="store-icon">
+                <use href="#icon-package-open"></use>
+              </svg>
+            </div>
+            <div>
+              <h1>Campus Stores</h1>
+              <div class="muted">Media equipment desk</div>
+            </div>
+          </div>
+          <div class="clock">
+            <small>Desk time</small><strong data-clock></strong>
+          </div>
+        </header>
+        <aside class="shift">
+          <div>
+            <b data-shift-title></b>
+            <p data-shift></p>
+          </div>
+          <button type="button" data-action="advance"></button>
+        </aside>
+        <div class="shell">
+          <nav aria-label="Store records" data-nav></nav>
+          <section
+            class="page"
+            data-page
+            aria-label="Selected register"
+          ></section>
+        </div>
+        <div class="statusbar">
+          <span role="status" aria-live="polite" data-status></span
+          ><button type="button" data-action="restart">
+            Restart sample shift
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
